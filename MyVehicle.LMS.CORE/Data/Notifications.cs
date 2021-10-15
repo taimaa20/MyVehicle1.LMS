@@ -6,14 +6,13 @@ using System.Text;
 
 namespace MyVehicle.LMS.CORE.Data
 {
-   public class Attendance
+   public class Notifications
     {
         [Key]
-        public int AttendanceId { get; set; }
-        public DateTime AtStartDate { get; set; }
-        public DateTime AtEndDate { get; set; }
-        public int AtStatus { get; set; }
-        public int UserId { get; set; }
+        public int NotificationId { get; set; }
+        public DateTime NotificationDate { get; set; }
+        public int NotificationStatus { get; set; }
+        public string NotificationText { get; set; }
 
         [ForeignKey("UserId")]
 

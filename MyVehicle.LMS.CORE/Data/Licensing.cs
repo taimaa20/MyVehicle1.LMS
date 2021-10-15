@@ -17,9 +17,6 @@ namespace MyVehicle.LMS.CORE.Data
         public float Cost { get; set; }
 
         public ICollection<LicensingAndInsurance> LicensingAndInsurances
-        {
-
-            get; set;
-        }
+        {get; set;}
     }
 }

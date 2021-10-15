@@ -6,15 +6,15 @@ using System.Text;
 
 namespace MyVehicle.LMS.CORE.Data
 {
-  public class Permissions
+   public class Review
     {
         [Key]
+        public int ReviewId { get; set; }
+        public double ReviewValue { get; set; }
 
-        public int PermissionsId { get; set; }
-        public int RoleId { get; set; }
+        [ForeignKey("SettingId")]
 
-        [ForeignKey("RoleId")]
+        public virtual WebsiteSetting WebsiteSetting { get; set; }
 
-        public virtual Role Role { get; set; }
     }
 }

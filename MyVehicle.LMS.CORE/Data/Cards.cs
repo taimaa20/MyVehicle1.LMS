@@ -16,8 +16,8 @@ namespace MyVehicle.LMS.CORE.Data
         public DateTime CardDate { get; set; }
         public int UserId { get; set; }
 
-       // [ForeignKey("UserId")]
+        [ForeignKey("UserId")]
 
-        //public virtual Users Users { get; set; }
+        public virtual Users Users { get; set; }
     }
 }

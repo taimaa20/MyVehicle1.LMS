@@ -6,14 +6,12 @@ using System.Text;
 
 namespace MyVehicle.LMS.CORE.Data
 {
-   public class Attendance
+  public  class TaskJob
     {
         [Key]
-        public int AttendanceId { get; set; }
-        public DateTime AtStartDate { get; set; }
-        public DateTime AtEndDate { get; set; }
-        public int AtStatus { get; set; }
-        public int UserId { get; set; }
+        public int TaskId { get; set; }
+        public string TaskDescription { get; set; }
+        public DateTime TaskDate { get; set; }
 
         [ForeignKey("UserId")]
 

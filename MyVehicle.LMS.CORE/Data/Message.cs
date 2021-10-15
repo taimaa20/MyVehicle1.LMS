@@ -6,15 +6,16 @@ using System.Text;
 
 namespace MyVehicle.LMS.CORE.Data
 {
-   public class Attendance
+   public class Message
     {
         [Key]
-        public int AttendanceId { get; set; }
-        public DateTime AtStartDate { get; set; }
-        public DateTime AtEndDate { get; set; }
-        public int AtStatus { get; set; }
-        public int UserId { get; set; }
+        public int MessageId { get; set; }
+        public string MessageText { get; set; }
+        public int MessageStatus { get; set; }
+        public string SenderName { get; set; }
 
+        public string MessageTitle { get; set; }
+        public DateTime MessageDate { get; set; }
         [ForeignKey("UserId")]
 
         public virtual Users Users { get; set; }
