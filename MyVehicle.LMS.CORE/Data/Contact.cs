@@ -18,8 +18,8 @@ namespace MyVehicle.LMS.CORE.Data
         public int PhoneNumber2 { get; set; }
         public int SettingId { get; set; }
 
-        //[ForeignKey("SettingId")]
+        [ForeignKey("SettingId")]
 
-        //public virtual WebsiteSetting WebsiteSetting  { get; set; }
+        public virtual WebsiteSetting WebsiteSetting { get; set; }
     }
 }

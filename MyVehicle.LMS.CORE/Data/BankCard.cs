@@ -17,9 +17,9 @@ namespace MyVehicle.LMS.CORE.Data
         public string BankPassword { get; set; }
         public int SettingId { get; set; }
 
-        //[ForeignKey("SettingId")]
+        [ForeignKey("SettingId")]
 
-        //public virtual WebsiteSetting WebsiteSetting  { get; set; }
+        public virtual WebsiteSetting WebsiteSetting { get; set; }
 
 
     }
