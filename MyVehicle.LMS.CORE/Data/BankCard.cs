@@ -6,18 +6,21 @@ using System.Text;
 
 namespace MyVehicle.LMS.CORE.Data
 {
-   public class About
+    public class BankCard
     {
         [Key]
-        public int AboutId { get; set; }
-
-        public string AboutImage { get; set; }
-        public string Description { get; set; }
+        public int BankCardId { get; set; }
+        public string BankNumber { get; set; }
+        public string BankName { get; set; }
+        public DateTime BankDate { get; set; }
+        public float BankAmount { get; set; }
+        public string BankPassword { get; set; }
         public int SettingId { get; set; }
 
         //[ForeignKey("SettingId")]
 
         //public virtual WebsiteSetting WebsiteSetting  { get; set; }
+
 
     }
 }
