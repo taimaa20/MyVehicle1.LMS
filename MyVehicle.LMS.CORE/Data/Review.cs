@@ -11,6 +11,7 @@ namespace MyVehicle.LMS.CORE.Data
         [Key]
         public int ReviewId { get; set; }
         public double ReviewValue { get; set; }
+        public int SettingId { get; set; }
 
         [ForeignKey("SettingId")]
 

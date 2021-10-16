@@ -13,6 +13,7 @@ namespace MyVehicle.LMS.CORE.Data
         public DateTime NotificationDate { get; set; }
         public int NotificationStatus { get; set; }
         public string NotificationText { get; set; }
+        public int UserId { get; set; }
 
         [ForeignKey("UserId")]
 

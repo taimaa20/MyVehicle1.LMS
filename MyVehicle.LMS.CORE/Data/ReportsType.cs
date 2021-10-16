@@ -10,5 +10,7 @@ namespace MyVehicle.LMS.CORE.Data
         [Key]
         public int ReportType { get; set; }
         public string ReportTypeName { get; set; }
+
+        public ICollection<Report> Reports { get; set; }
     }
 }

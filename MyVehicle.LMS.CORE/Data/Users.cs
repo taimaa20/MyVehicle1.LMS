@@ -31,7 +31,7 @@ namespace MyVehicle.LMS.CORE.Data
         public virtual WebsiteSetting WebsiteSetting { get; set; }
         public ICollection<Attendance> Attendances { get; set; }
 
-        public ICollection<Cards> cards { get; set; }
+        public ICollection<Cards> Cards { get; set; }
         public ICollection<Message> Messages { get; set; }
         public ICollection<Notifications> Notifications { get; set; }
         public ICollection<Report> Reports { get; set; }
