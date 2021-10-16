@@ -12,7 +12,8 @@ namespace MyVehicle.LMS.CORE.Data
         public int ReportId { get; set; }
         public DateTime ReportDate { get; set; }
         public string ReportFile { get; set; }
-
+        public int  UserId{ get; set; }
+        public int ReportType { get; set; }
 
         [ForeignKey("UserId")]
 
@@ -20,7 +21,7 @@ namespace MyVehicle.LMS.CORE.Data
 
         [ForeignKey("ReportType")]
 
-        public virtual ReportsType  ReportType { get; set; }
+        public virtual ReportsType ReportsType { get; set; }
 
     }
 }

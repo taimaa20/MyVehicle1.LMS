@@ -12,9 +12,9 @@ namespace MyVehicle.LMS.CORE.Data
         public string WebLogo { get; set; }
         public string WebBackground { get; set; }
 
-        public ICollection<About> About{ get; set; }
+        public ICollection<About> Abouts{ get; set; }
 
-        public ICollection<BankCard> BankCard { get; set; }
+        public ICollection<BankCard> BankCards { get; set; }
         public ICollection<Contact> Contacts { get; set; }
 
         public ICollection<Review> Reviews { get; set; }

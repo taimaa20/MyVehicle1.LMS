@@ -13,6 +13,8 @@ namespace MyVehicle.LMS.CORE.Data
         public string TaskDescription { get; set; }
         public DateTime TaskDate { get; set; }
 
+        public int UserId { get; set; }
+
         [ForeignKey("UserId")]
 
         public virtual Users Users { get; set; }
