@@ -29,6 +29,13 @@ namespace MyVehicle.LMS.CORE.Data
         [ForeignKey("SettingId")]
 
         public virtual WebsiteSetting WebsiteSetting { get; set; }
+        public ICollection<Attendance> Attendances { get; set; }
 
+        public ICollection<Cards> cards { get; set; }
+        public ICollection<Message> Messages { get; set; }
+        public ICollection<Notifications> Notifications { get; set; }
+        public ICollection<Report> Reports { get; set; }
+        public ICollection<TaskJob> TaskJobs { get; set; }
+        public ICollection<Vehicles> Vehicles { get; set; }
     }
 }

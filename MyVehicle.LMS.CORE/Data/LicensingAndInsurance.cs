@@ -22,5 +22,6 @@ namespace MyVehicle.LMS.CORE.Data
         [ForeignKey("InsuranceId")]
 
         public virtual Insurance Insurance  { get; set; }
+        public ICollection<Vehicles> Vehicles { get; set; }
     }
 }

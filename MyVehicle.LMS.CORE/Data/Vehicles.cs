@@ -29,7 +29,7 @@ namespace MyVehicle.LMS.CORE.Data
         public int UserId { get; set; }
         public int LicenseValueId { get; set; }
 
-        [ForeignKey("SettingId")]
+        [ForeignKey("UserId")]
 
         public virtual Users Users { get; set; }
 
